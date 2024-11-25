@@ -192,7 +192,7 @@ docker exec -it com1 /bin/bash
 ``` 
 
 ## 2.Practice with com1: 
-*Second, we install neccessary tools:
+*First, we install neccessary tools:
 ```sh
 apt install -y apache2
 systemctl start apache2
@@ -206,7 +206,7 @@ systemctl start ssh
 
 ```
 
-*Second, we Configure iptables to allow/block traffic:
+*Third, we Configure iptables to allow/block traffic:
 -Allow HTTP (port 80) and SSH (port 22)
 ```sh
 iptables -A INPUT -p tcp --dport 80 -j ACCEPT
